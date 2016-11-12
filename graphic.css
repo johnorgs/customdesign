@@ -1,0 +1,335 @@
+html
+{
+	-webkit-transition: background-color 2s;
+	transition: background-color 2s;
+}
+html, body
+{
+	 min-height: 100%;
+}
+html.loading
+{
+  background-image: url('tail-spin.svg');
+	background: #F4A460 url('tail-spin.svg') no-repeat 50% 300px;
+	-webkit-transition: background-color 0;
+	transition: background-color 0;
+}
+body
+{
+	-webkit-transition: opacity 2s ease-in;
+	transition: opacity 2s ease-in;
+}
+html.loading body 
+{
+	opacity: 0;
+	-webkit-transition: opacity 0;
+	transition: opacity 0;
+}
+
+#head
+{
+  height: 125px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+}
+
+a{color: white;}
+#t1
+{
+	float: left;
+	padding-left: 75px;
+  padding-top: 15px;
+	font-size: 50px;
+  letter-spacing: 2px;
+  z-index: 1;
+  font-family: font1;
+}
+#t2
+{
+	float: right;
+	padding: 30px;
+	font-size: 20px;
+  letter-spacing: 3px;
+  font-family: font2;
+}
+#t3
+{
+	float: right;
+	padding: 30px;
+	font-size: 20px;
+  letter-spacing: 3px;
+  font-family: font2;
+}
+#t4
+{
+	float: right;
+	padding: 30px;
+	font-size: 20px;
+  letter-spacing: 3px;
+  font-family: font2;
+}
+
+#head, #head * { transition: all 0.3s ease; }
+#head.shrinked
+{
+  height: 80px;
+  background-color: white;
+  opacity: 1;
+}
+#head.shrinked span 
+{
+  color: black;
+  font-size: 20px;
+  padding: 30px;
+  letter-spacing: 3px;
+}
+
+body
+{
+  margin: 0;
+  /* Added for sense of scrok=lling */
+}
+ /* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(555,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+#vedios
+{
+  width: 100%;
+  z-index: -1;
+}
+#b1
+{
+  margin: 0px;
+	width: 100%;
+	height: 750px;
+	background-image: url("http://pakrevolution.com/wp-content/uploads/2016/10/birds-kingfisher-water-animals-bird-enjoy-high-quality-picture.jpg");
+  background-size: 100% 750px;
+  background-repeat: no-repeat;
+}
+#b2
+{
+	height: 750px;
+}
+#b3
+{
+  float: left;
+  width: 50%;
+  height: 750px;
+  background-color: #FFFFFF;
+  opacity: 1;
+
+}
+#b4
+{
+  float: right;
+  width: 50%;
+  height: 750px;
+  background-image: url("http://3.bp.blogspot.com/-W82uQ27Q6Yc/TcivsZe8AnI/AAAAAAAADzg/JGb58iDTDn4/s1600/colourful+birds+wallpaper+%25285%2529.jpg");
+  background-size: 100% 750px;
+ 
+}
+#b5
+{
+  margin: 0px;
+  width: 100%;
+  height: 650px;
+  background-image: url("http://livehdwallpaper.com/wp-content/uploads/2016/02/Awesome-Birds-in-Rain-Wallpapers-HD-Pictures.jpg");
+  background-size: 100% 750px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.bgimg-1 {
+  background-image: url("pic1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://wallpaper4k.info/wp-content/uploads/2016/02/bird-wallpaper-1920x1200-063-1680x1050.jpg");
+  min-height: 600px;
+  z-index: -1;
+}
+
+.bgimg-3 {
+  background-image: url("pp13.jpg");
+  min-height: 600px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  z-index: -1;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-family: font3;
+  letter-spacing: 10px;
+  z-index: -1;
+}
+@font-face
+{
+  font-family:font1;
+  src:url(leck.ttf);
+}
+@font-face
+{
+  font-family:font2;
+  src:url(damion.ttf);
+}
+@font-face
+{
+  font-family:font3;
+  src:url(love.ttf);
+}
+#cc1
+{
+  margin-left:200px;
+  padding-top: 200px;
+
+  width: 50%;
+  height: 500px;
+  
+}
+#p1
+{
+  margin-left: 45%;
+  font-size: 45px;
+  color: #FFFFFF;
+  font-family: font3;
+}
+#p2
+{
+  margin-left: 40%;
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family: font2;
+}
+#p3
+{
+  margin-left: 70%;
+}
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+  colr:000;
+}
+.fa-sort-down{
+  color: #027bdd;
+  font-size: 30px;
+  margin: 20px;
+}
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+#p4
+{
+  margin-top: 120px;
+  margin-left: 80px;
+  width: 500px;
+  height: 500px;
+  
+  opacity: 1;
+  border-style: solid;
+
+}
+#p5
+{
+  font-size: 50px;
+  font-family: font1;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+#p6
+{
+  font-size: 20px;
+  font-family: font2;
+  margin-left: 20px;
+  margin-top: 1px; 
+  margin-right: 10px;
+}
+#p7
+{
+  margin-left: 50%;
+  z-index: -1;
+}
+#p8
+{
+  width: 600px;
+  height: 500px;
+ opacity: 1;
+  z-index: -1;
+  background-color: #FFFFFF;
+}
+#p9
+{
+  padding: 90px;
+  font-family: font2;
+  font-size: 50px;
+}

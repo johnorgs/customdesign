@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="loading">
+<head>
+	<title>Web Design</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="shortcut icon" href="desk.ico" />
+	<link rel="stylesheet" type="text/css" href="graphic.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body id="home" style="min-width:1200px">
+	<div id="head">
+  		<a href="#home"><span id="t1">Wildlife</span></a>
+  		<a href="#b5"><span id="t2">About</span></a>
+  		<a href="#test"><span id="t3">Extras</span></a>
+  		<a href="#b2"><span id="t4">Concept</span></a>
+  	</div>
+	<div id="b1">
+		<!--<video autoplay loop  id="vedios">
+			<source src="vedio.mp4" type="video/mp4">
+		</video>-->
+		<div id="cc1"><p id="p1"><b>The natural world</b></p>
+			<p id="p2">The Natural History Unit has been making ground-breaking wildlife documentaries for more than 50 years, capturing some of the most mesmerising moments in the natural world on film, many for the first time.</p>
+			<p id="p3"><a href="#b2"><i class="fa fa-sort-down bounce" style="font-size:48px;color:white"></i></a></p>
+		</div>
+	</div>
+	<br>
+	<div id="b2">
+		<div id="b3">
+			<div id="p4">
+				<p id="p5">Wildlife</p>
+				<p id="p6">Wildlife traditionally refers to undomesticated animal species, but has come to include all plants, fungi, and other organisms that grow or live wild in an area without being introduced by humans.
+
+Wildlife can be found in all ecosystems. Deserts, forests, rain forests, plains, grasslands, and other areas including the most developed urban sites, all have distinct forms of wildlife. While the term in popular culture usually refers to animals that are untouched by human factors,most scientists agree that much wildlife is affected by human activities.</p>
+			</div>
+		</div>
+		<div id="b4">
+
+		</div>
+	</div>
+	<br>
+	<!--<div id="b5">
+		<video autoplay loop  id="vedios">
+			<source src="vedio.mp4" type="video/mp4">
+		</video>
+	</div>-->
+	<div class="bgimg-2" id="test">
+  		<div class="caption">
+    		<span class="border" style="background-color:transparent;font-size:42px;color: #f7f7f7;"><b><q>Nature never goes out of style</q></b></span>
+  		</div>
+	</div>
+	<br>
+	<div id="b5">
+		<div id="p7">
+			<div id="p8">
+				<p id="p9">John B. 2016</p>
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		var html = document.getElementsByTagName('html')[0];
+		var removeLoading = function() {
+			setTimeout(function() {
+				html.className = html.className.replace(/loading/, '');
+			}, 3000);
+		};
+		removeLoading();
+	</script>
+	<script>
+		$(document).scroll(function() {
+  			if ($(this).scrollTop() > 100) { //Adjust 150
+    		$('#head').addClass('shrinked');
+  			} else {
+    		$('#head').removeClass('shrinked');
+  			}
+		});
+	</script>
+	<script >
+	$('a[href*="#"]:not([href="#"])').click(function() {
+  		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    	var target = $(this.hash);
+    	target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    	if (target.length) {
+      		$('html, body').animate({
+        	scrollTop: target.offset().top
+      		}, 900);
+      		return false;
+    		}
+  		}
+	});
+	</script>
+	<!--<button onclick="html.className = 'loading'; removeLoading();">Reload</button>-->
+</body>				
+</html>
